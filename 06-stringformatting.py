@@ -14,5 +14,7 @@ print("A list: %s" % myList)
 #Printing a bunch of numbers.
 print("The %d-%d Dallas Cowboys are playing the %d-%d Washington Commanders in Week 17 to close the season." % (7, 9, 11, 5))
 #Printing the Cowboys win percentage.
-cowboysWinPercentage = 7.0 / 9.0
+cowboysWins = 7
+cowboysLosses = 9
+cowboysWinPercentage = cowboysWins / (cowboysWins + cowboysLosses)
 print("Cowboys Win %%: %.2f" % cowboysWinPercentage)
