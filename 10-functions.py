@@ -12,10 +12,12 @@ def helloWorldTwo(stringOne):
 def sumOfArguments(numberOne, numberTwo):
     return numberOne + numberTwo
 
+# One function to call them all!
+def callThemAll(stringOne, numberOne, numberTwo):
+    helloWorld()
+    helloWorldTwo(stringOne)
+    sumOfArguments(3, 7)
+
 ### Using the Functions ###
-helloWorld()
-helloWorldTwo("Hello World!")
-numberOne = 4
-numberTwo = 3
-print(sumOfArguments(numberOne, numberTwo))
+callThemAll("Hello World!", 3, 7)
 
