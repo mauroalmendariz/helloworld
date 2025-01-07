@@ -5,6 +5,14 @@ class ClientIdentity:
     def PrintMessage(self):
         print("This is a message from a class function.")
 
+# Basic class for holding a number.
+class NumberHolder:
+    def __init__(self, number):
+        self.number = number
+
+    def returnNumber(self):
+        return self.number
+
 # Create our first client.
 firstClient = ClientIdentity()
 
@@ -20,3 +28,6 @@ secondClient = ClientIdentity()
 secondClient.ClientName = "Mauro"
 secondClient.PrintMessage()
 print(secondClient.ClientName)
+
+firstNumber = NumberHolder(8)
+print(firstNumber.returnNumber())
